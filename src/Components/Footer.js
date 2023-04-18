@@ -19,8 +19,14 @@ const Footer = () => {
           <div className="location">
             <FaHome size={20} style={{ color: "#fff", marginRight: "2rem" }} />
             <div>
-              <p>Gla University,17km Stone,NH-2</p>
-              <p>P.O.Chaumuhan,Mathura</p>
+              <h4>
+                <p>
+                  <h4>Gla University,17km Stone,NH-2 </h4>
+                </p>
+                <p>
+                  <h4>P.O.Chaumuhan,Mathura</h4>
+                </p>
+              </h4>
             </div>
           </div>
           <div className="phone">
@@ -35,7 +41,7 @@ const Footer = () => {
           <div className="email">
             <FaMailBulk
               size={20}
-              style={{ color: "#fff", marginRight: "2rem" }}
+              style={{ color: "white", marginRight: "2rem" }}
             />
             info@gla.ac.in
           </div>
@@ -43,10 +49,12 @@ const Footer = () => {
         <div className="right">
           <h4>About the university</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque
-            ea quis molestias. Fugiat pariatur maxime quis culpa corporis vitae
-            repudiandae aliquam voluptatem veniam, est atque cumque eum delectus
-            sint!{" "}
+            <h4>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+              atque ea quis molestias. Fugiat pariatur maxime quis culpa
+              corporis vitae repudiandae aliquam voluptatem veniam, est atque
+              cumque eum delectus sint!
+            </h4>
           </p>
 
           <div className="social">

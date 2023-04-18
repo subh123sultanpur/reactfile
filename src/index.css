@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   font-family: "Outfit", sans-serif;
+  text-align: center;
+  min-height: 100vh;
 }
 
 body {
@@ -23,7 +25,7 @@ ul {
   list-style-type: none;
 }
 
-.btn {
+ .btn {
   padding: 12px 32px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -48,4 +50,4 @@ ul {
 }
 .btn-light:hover {
   background: rgba(255, 255, 255, 0.2);
-}
+}  

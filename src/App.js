@@ -8,12 +8,14 @@ import Services from "./Components/Routes/Services";
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/Services" element={<Services />} />
-        <Route path="/Contact" element={<Contact />} />
-      </Routes>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+      </div>
     </>
   );
 }

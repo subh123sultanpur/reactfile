@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const [color, setColor] = useState(false);
   const changeColor = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 100000) {
       setColor(true);
     } else {
       setColor(false);
@@ -19,33 +19,35 @@ const Navbar = () => {
   window.addEventListener("scroll", changeColor);
 
   return (
-    <div className={color ? "header header-bg" : "header"}>
-      <Link to="/">
-        <h1> WELCOME </h1>
-      </Link>
+    <>
+      <div className={color ? "header header-bg" : "header"}>
+        <Link to="/">
+          <h1> Portfolio </h1>
+        </Link>
 
-      <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/Services">Services</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
-      <div className="hamburger" onClick={handleClick}>
-        {click ? (
-          <FaTimes size={20} style={{ color: "#fff" }} />
-        ) : (
-          <FaBars size={20} style={{ color: "#fff" }} />
-        )}
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/Services">Services</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+        <div className="hamburger" onClick={handleClick}>
+          {click ? (
+            <FaTimes size={20} style={{ color: "#fff" }} />
+          ) : (
+            <FaBars size={20} style={{ color: "#fff" }} />
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
